@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.porkpit">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_pork2"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_pork2"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:replace="android:icon">
+        <activity android:name=".menuslides" android:noHistory="true"></activity>
+        <activity android:name=".menu" />
+        <activity android:name=".aboutactivity" />
+        <activity android:name=".changelocation" />
+        <activity android:name=".changepassword" />
+        <activity android:name=".checkout" />
+        <activity android:name=".settings" />
+        <activity android:name=".productdetails" />
+        <activity android:name=".cart" />
+        <activity
+            android:name=".welcomeslides"
+            android:noHistory="true" />
+        <activity
+            android:name=".home"
+            android:label="@string/title_activity_home"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".signup" />
+        <activity
+            android:name=".login"
+            android:noHistory="true" />
+        <activity android:name=".start" />
+        <activity
+            android:name=".MainActivity"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

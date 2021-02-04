@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1088687489271",
+    "project_id": "porkpit-fe8ac",
+    "storage_bucket": "porkpit-fe8ac.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1088687489271:android:e03ef75dcad3b1e638d3f2",
+        "android_client_info": {
+          "package_name": "com.example.porkpit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1088687489271-inhmqi7vi8lvl4g8fs052nhmqqn1nbeg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.porkpit",
+            "certificate_hash": "fa2e5d20e75089231e1d1d07326e4f65e4bd10b0"
+          }
+        },
+        {
+          "client_id": "1088687489271-j6jna5f663bghf9jr1caaejapp2qrokr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAzLODkah27J6e6Ps2dMMBpELeH3ML72_U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1088687489271-j6jna5f663bghf9jr1caaejapp2qrokr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

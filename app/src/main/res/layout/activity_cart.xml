@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".cart">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclermenucart"
+                android:layout_width="match_parent"
+                android:layout_height="560dp"
+                android:layout_alignParentStart="true"
+                android:background="@drawable/accbg"
+                android:scrollbars="vertical">
+
+
+            </androidx.recyclerview.widget.RecyclerView>
+            <LinearLayout
+                android:background="@color/fadeblue"
+                android:layout_below="@+id/recyclermenucart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/view2"
+                    android:layout_width="50dp"
+
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="1dp"
+                    android:background="#ffffff"
+                    android:elevation="20dp"
+                    android:shape="ring"
+                    android:visibility="gone"
+                    app:cardCornerRadius="45dp">
+
+                    <Button
+                        android:id="@+id/extracaartbutton"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="8dp"
+                        android:background="@android:color/transparent"
+                        android:drawableBottom="@drawable/add_circle_24"
+                        android:drawableTint="@color/blue" />
+                </androidx.cardview.widget.CardView>
+
+
+                <TextView
+
+                    android:id="@+id/carttotaltxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="total"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="250dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="2dp"
+                    android:elevation="20dp"
+                    android:layout_centerHorizontal="true"
+android:layout_gravity="center"
+                    app:cardBackgroundColor="@color/blue"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="20dp">
+                    <Button
+                        android:background="@android:color/transparent"
+                        android:id="@+id/checkoutbtn"
+android:textColor="@color/purewhite"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="check out?" />
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/textView36"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tap item to edit"
+                    android:textAlignment="center" />
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+
+</RelativeLayout>

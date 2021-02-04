@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".productdetails">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/view234"
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_marginTop="2dp"
+        android:elevation="15dp"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content"
+
+
+        android:background="#ffffff"
+        android:shape="ring"
+        app:cardCornerRadius="15dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_margin="20dp"
+                android:scaleType="centerCrop"
+                android:id="@+id/detailproductimage"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                />
+
+
+            <TextView
+                android:id="@+id/detailproductname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="product name"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TableRow
+                    android:layout_margin="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:id="@+id/textView32"
+                        android:textAlignment="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Price:" />
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:id="@+id/detailproductprice"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:text="price"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/blue" />
+                </TableRow>
+
+            </TableLayout>
+
+            <TextView
+                android:id="@+id/detailproductdescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="category"
+                android:textAlignment="center"
+                android:textColor="@color/blue" />
+
+            <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
+                android:id="@+id/elegandadd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:elevation="15dp"
+                app:finalNumber="10"
+                app:initialNumber="1"
+                app:textSize="16dp"></com.cepheuen.elegantnumberbutton.view.ElegantNumberButton>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/view2"
+
+                android:layout_width="150dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="10dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+app:cardBackgroundColor="@color/green"
+                android:background="#ffffff"
+                android:shape="ring"
+                app:cardCornerRadius="5dp">
+
+                <Button
+                    android:background="@android:color/transparent"
+                    android:layout_gravity="center"
+                    android:id="@+id/dcartbtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add to Cart" />
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <ProgressBar
+        android:id="@+id/detprogresbar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="ThePorkPit"
+        android:textAlignment="center" />
+
+
+</LinearLayout>

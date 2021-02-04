@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".checkout">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:drawableTop="@drawable/circlegreen"
+                android:text="Checkout" />
+
+            <TextView
+                android:id="@+id/textView25"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="You Should Receive A Pop UP From Mpesa.Enter Your Mpesa Pin To Confirm Payment,After Payment, Press Paid Button For Processing"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView26"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="If NOT"
+                android:textAlignment="center"
+                android:textColor="@color/red"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/textView27"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Click button Below To Copy PorkPit Till Number Then Follow Steps Below"
+                android:textAlignment="center"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/hastillbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="8dp"
+                android:background="@drawable/custominput"
+                android:drawableStart="@drawable/add_circle_24"
+                android:drawablePadding="5dp"
+                android:padding="5dp"
+                android:text="Copy Till : 000686"
+                android:textColor="@color/black" />
+
+            <TextView
+
+                android:id="@+id/textView28"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="1.Go to mpesa"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/textView29"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="2.Then lipa Na Mpesa"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/textView30"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="3.Select Buy goods and  Services"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/textView31"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="4.Paste copied Till Number"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/textamount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="5.Next Enter Amount "
+                android:textColor="@android:color/holo_green_dark"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/textView33"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="6.Next Enter Your Pin"
+                android:textColor="@color/black" />
+
+            <TextView
+
+                android:id="@+id/textView34"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="7.Wait For Mpesa Confirm Message Then Copy It And Paste It In Field Below"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/textView35"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="5dp"
+                android:text="8.Press Paid Button"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/editTextmpesam"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_margin="6dp"
+                android:background="@drawable/custominput"
+                android:ems="10"
+                android:gravity="start|top"
+                android:hint="paste Mpesa Message Here"
+                android:inputType="textMultiLine"
+                android:padding="5dp" />
+
+            <Button
+                android:id="@+id/haspaidbtn"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/custominput"
+                android:text="Paid"
+                android:textColor="@color/blue" />
+
+            <Button
+                android:id="@+id/callhelpc"
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custominput"
+                android:text="call : +254710664418" />
+
+
+            <TextView
+                android:layout_gravity="center"
+                android:id="@+id/texw35"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:textSize="13dp"
+
+                android:layout_marginBottom="10dp"
+                android:text="Powered By TuwashowMedia"
+                android:textColor="@color/black" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

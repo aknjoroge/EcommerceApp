@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="@drawable/page1"
+    tools:context=".start">
+
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+       android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <ProgressBar
+            android:id="@+id/slogbar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/slogingtxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Loging in, Pleasse Wait..."
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:visibility="invisible" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/view2"
+            android:layout_width="190dp"
+            android:layout_height="190dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="0dp"
+android:layout_marginBottom="30dp"
+            android:background="#ffffff"
+            android:shape="ring"
+            app:cardCornerRadius="95dp">
+
+            <ImageView
+                android:id="@+id/dpinsetting"
+                android:layout_width="190dp"
+                android:layout_height="190dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/pit2" />
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/loginbtn"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+android:layout_gravity="center"
+android:textColor="@color/orange"
+            android:background="@drawable/custominput"
+            android:text="Login." />
+
+        <Button
+            android:id="@+id/signupbtn"
+            android:layout_marginTop="20dp"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+android:layout_gravity="center"
+            android:textColor="@color/blue"
+            android:background="@drawable/custominput"
+            android:text="New user? Sign up." />
+
+        <TextView
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/txtpassf"
+            android:textAlignment="textEnd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Forgot Password?"
+            android:textColor="@color/red" />
+    </LinearLayout>
+
+</LinearLayout>
