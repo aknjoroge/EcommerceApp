@@ -131,7 +131,7 @@ public class cart extends AppCompatActivity {
 
     }
 
-    public void oncartclick(){
+    public void oncartclick(final String key){
 
         android.app.AlertDialog dialog = new AlertDialog.Builder(this,R.style.AlertDialogStyle)
                 .setTitle("Cart Opptions")
@@ -139,7 +139,7 @@ public class cart extends AppCompatActivity {
                 .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        fStore.collection("CartList").document("orders").collection(userid).document(keptkey)
+                        fStore.collection("CartList").document("orders").collection(userid).document(key)
                                 .delete()
                                 .addOnSuccessListener(new OnSuccessListener<Void>() {
                                     @Override
@@ -207,7 +207,9 @@ public class cart extends AppCompatActivity {
 
                     @Override
                     public void onClick(View v) {
-                    oncartclick();
+
+                    oncartclick(model.getKey());
+
                     }
                 });
             }

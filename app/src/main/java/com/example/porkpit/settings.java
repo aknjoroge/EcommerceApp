@@ -383,7 +383,7 @@ usermaps.put("phone",takenew);
                 }).addOnFailureListener(new OnFailureListener() {
                     @Override
                     public void onFailure(@NonNull Exception e) {
-                        Toast.makeText(settings.this, "errorr "+e.toString(), Toast.LENGTH_SHORT).show();
+
                     }
                 });
 
